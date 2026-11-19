@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>Разговорная практика — 汉语口语练习</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">中</span><span><span class="ru">Разговорная практика</span><span class="zh">汉语口语练习</span></span></a>
+    <div class="lesson-badge"><span class="ru" id="lesson-number">Урок 1</span><span class="zh">第一课</span></div>
+  </header>
+  <main class="shell" id="app">
+    <section class="intro"><div><p class="eyebrow" id="lesson-kicker"><span class="ru">ПРАКТИКА РЕЧИ · УРОК 1</span><span class="zh">口语练习 · 第一课</span></p><h1 id="lesson-title"><span class="ru">Загрузка урока…</span><span class="zh">正在加载课程……</span></h1><p class="intro-copy" id="lesson-description"></p></div><div class="progress-card"><div class="progress-heading"><div><span class="ru">Прогресс обучения</span><span class="zh">学习进度</span></div><strong id="progress-text">0 / 0</strong></div><div class="progress-track"><div id="progress-bar"></div></div><div class="progress-foot"><span id="correct-count"><span class="ru">Правильные ответы</span><span class="zh">正确回答</span><b>0</b></span><span id="teacher-count"><span class="ru">Вопросы для преподавателя</span><span class="zh">待教师答疑的问题</span><b>0</b></span></div></div></section>
+    <section class="workspace" id="lesson-view">
+      <article class="teacher-card panel"><div class="teacher-art"><img id="avatar-image" alt="Китайский преподаватель / 中文老师"><div class="avatar-fallback" id="avatar-fallback" aria-hidden="true">👩🏻‍🏫</div><span class="online-dot" aria-hidden="true"></span></div><div class="teacher-name" id="avatar-name"><span class="ru">Китайский преподаватель</span><span class="zh">中文老师</span></div><div class="teacher-bubble" id="teacher-line"></div><div class="teacher-controls"><button class="button button-soft" id="play-question"><span class="ru">Прослушать вопрос</span><span class="zh">听问题</span></button><span class="speech-status" id="speech-status" role="status" aria-live="polite"></span></div></article>
+      <article class="exercise panel"><div class="question-meta"><span class="question-chip" id="current-chip"><span class="ru">Вопрос</span><span class="zh">当前题目</span></span><span id="question-number">1 / 5</span></div><div class="question-text" id="question-text"></div><div class="feedback" id="feedback" role="status" aria-live="polite" hidden></div><div class="answer-area"><button class="mic-button" id="mic-button" type="button"><span class="mic-symbol" aria-hidden="true">🎙</span><span class="ru" id="mic-ru">Нажмите и говорите</span><span class="zh" id="mic-zh">点击并开始说话</span></button><div class="transcript" id="transcript-wrap" hidden><div class="transcript-label"><span class="ru">Распознанный ответ</span><span class="zh">语音识别结果</span></div><p id="transcript"></p></div><form id="answer-form" class="text-form"><label for="answer-input"><span class="ru">Введите ответ на китайском языке</span><span class="zh">请输入中文回答</span></label><div class="input-row"><input id="answer-input" autocomplete="off" placeholder="Например: 我叫安娜 / 例如：我叫安娜" aria-label="Введите ответ на китайском языке / 请输入中文回答"><button class="button button-primary" type="submit"><span class="ru">Ответить</span><span class="zh">提交回答</span></button></div></form><div class="attempt-line" id="attempt-line"></div><div class="action-row"><button class="button button-ghost" id="retry-button" type="button" hidden><span class="ru">Ответить ещё раз</span><span class="zh">重新回答</span></button><button class="button button-primary" id="next-button" type="button" hidden><span class="ru">Следующий вопрос</span><span class="zh">下一题</span><span aria-hidden="true"> →</span></button></div></div></article>
+    </section>
+    <section class="export-row"><div><span class="ru">Учебная запись хранится только в этом браузере.</span><span class="zh">学习记录仅保存在当前浏览器中。</span></div><div class="export-actions"><button class="button button-soft" id="export-json"><span class="ru">Экспорт вопросов · JSON</span><span class="zh">导出待答疑问题 · JSON</span></button><button class="button button-soft" id="export-csv"><span class="ru">Экспорт вопросов · CSV</span><span class="zh">导出待答疑问题 · CSV</span></button></div></section>
+    <section class="completion panel" id="completion-view" hidden></section>
+    <section class="error-panel panel" id="error-view" hidden></section>
+    <footer><span><span class="ru">Китайский учебный робот V1.0</span><span class="zh">汉语学习机器人 V1.0</span></span><span class="ru">Учитесь в своём темпе</span><span class="zh">按照自己的节奏学习</span></footer>
+  </main>
+</body>
+</html>
